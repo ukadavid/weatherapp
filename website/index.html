@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- UTF for text encoding -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Viewport to make the page responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Font Roboto -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto:ital,wght@0,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <!-- External StyleSheet -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Title will show on the top of the page -->
+    <title>Udacity Weather Journal App</title>
+  </head>
+  <!-- Start of the body -->
+  <body>
+    <!-- A div to wrap the whole content -->
+    <!-- Start of wrapper -->
+    <div id="app">
+      <div class="holder headline">
+        <!-- Header -->
+        <h1 class="headline">Udacity Weather Journal App</h1>
+      </div>
+      <form class="form">
+        <!-- Zip Section -->
+        <div class="holder zip">
+          <input
+            type="text"
+            id="zip"
+            required
+            placeholder="Your Zip Code Goes Here"
+          />
+        </div>
+        <!-- Feeling Section -->
+        <div class="holder">
+          <textarea
+            id="feelings"
+            required
+            rows="6"
+            cols="39"
+            placeholder="Tell me how you are feeling"
+          ></textarea>
+        </div>
+        <!-- The Submit Button -->
+        <!-- We will add an eventlistener, so that on click, it will dynamically update the UI -->
+        <button id="generate" type="submit">Submit</button>
+      </form>
+      <!-- Start of the section that will update automatically -->
+      <div class="holder entry">
+        <h2>Most Recent Entry</h2>
+        <div id="entryHolder">
+          <div>
+            <div id="date"></div>
+          </div>
+          <div>
+            <div id="temp"></div>
+          </div>
+          <div>
+            <div id="content"></div>
+            <!-- End of the section -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End of wrapper -->
+    <!-- App.js File -->
+    <script src="app.js" type="text/javascript"></script>
+  </body>
+  <!-- End of the body -->
+</html>
