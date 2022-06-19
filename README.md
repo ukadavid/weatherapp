@@ -5,10 +5,10 @@
 This project requires you to build an asynchronous web app that dynamically updates the UI using the Web API and user data.
 
 ## Dependencies Installation
-initialization - npm init
-Express - npm install express
-body-parser - npm install body-parser
-cors - npm install cors
+initialization - npm init;
+Express - npm install express;
+body-parser - npm install body-parser;
+cors - npm install cors;
 
 ## Instructions
 This will require modifying the server.js file and the website/app.js file. You can see index.html for element references, and once you are finished with the project steps, you can use style.css to style your application to customized perfection.
